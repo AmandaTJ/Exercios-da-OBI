@@ -18,13 +18,21 @@ for i in range(d):
 for i in range(e // 3):
     g.append(list(map(int, input().split())))
 
-for grupo in g:
-    for g[grupo] in q:
-        if g[grupo] != m[g[grupo]]:
+# Verificação dos que querem ficar juntos
+for dupla in q:
+    juntos = False
+    for grupo in g:
+        if dupla[0] in grupo and dupla[1] in grupo:
+            juntos = True
+            break
+        else:
             r += 1
-for grupo in g:
-    for g[grupo] in nq:
-        if g[grupo] == nq[g[grupo]]:
+
+# Verificação dos que não querem ficar junto
+for dupla in nq:
+    for grupo in g:
+        if dupla[0] in grupo and dupla[1] in grupo:
             r += 1
+            break
 
 print(r)
