@@ -4,15 +4,15 @@ n1 = int(input())
 n2 = int(input())
 n3 = int(input())
 
-icamila = 0
+ic = 0 # idade de camila
 
 if n1 >= n2 and n1 <= n3 or n1 <= n2 and n1 >= n3:
-    icamila = n1
+    ic = n1
 
 elif n2 >= n1 and n2 <= n3 or n2 <= n1 and n2 >= n3:
-    icamila = n2
+    ic = n2
 
 else:
-    icamila = n3
+    ic = n3
 
-print(icamila)
+print(ic)
