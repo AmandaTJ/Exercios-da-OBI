@@ -23,4 +23,4 @@ for i in range(n):
     resposta = min(resposta, maior) # verifica a menor
 
 print(resposta)
-# esse deu trabalhos
+# esse deu trabalho
