@@ -1,5 +1,4 @@
 N = int(input())
-
 cidades = []
 
 for i in range(N + 1):
@@ -35,3 +34,5 @@ A, distancia = busca(1)
 B, resposta = busca(A)
 
 print(resposta)
+# ele pega a cidade mais distante da cidade 1 e depois pega a cidade mais distante dessa cidade
+# o resultado é a distância entre essas duas cidades.
